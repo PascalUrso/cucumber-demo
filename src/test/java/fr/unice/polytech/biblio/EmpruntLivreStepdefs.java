@@ -60,7 +60,7 @@ public class EmpruntLivreStepdefs { // implements En si vos scénarios sont écr
 
     @Et("Le livre {string} est indisponible")
     public void etLivreDispo(String titreLivre)  {
-        assertEquals(false, biblio.getLivreByTitle(titreLivre).getEmprunte());
+        assertEquals(true, biblio.getLivreByTitle(titreLivre).getEmprunte());
     }
 
 
