@@ -60,7 +60,7 @@ public class BookRentalStepdefs {
 
     @And("The book {string} is unavailable")
     public void andUnvailableBook(String titreLivre) {
-        assertEquals(true, biblio.getLivreByTitle(titreLivre).getEmprunte());
+        assertEquals(false, biblio.getLivreByTitle(titreLivre).getEmprunte());
     }
 
 }
